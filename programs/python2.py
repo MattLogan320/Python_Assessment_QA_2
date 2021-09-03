@@ -221,11 +221,11 @@ def seven(a, b, c):
 
 def eight(string, num):
     count=0
-    while count<num:
-        string.replace(str(string[len(string)//2]),"")
+    while count<num-1:
+        string = string.replace(str(string[len(string)//2]),"")
         count+=1
 
-    return string
+    return string # str.replace() is replacing every occurence of character at string[i=length(string)/2] not just that index. Not sure how to correct this.
 
     # <QUESTION 9>
 
