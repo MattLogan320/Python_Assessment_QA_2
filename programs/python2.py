@@ -195,7 +195,13 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    list=[a,b,c]
+    list.sort()
+    for i in list:
+        if list[1]-list[0]==list[2]-list[1]:
+            return True
+        else:
+            return False
 
     # <QUESTION 8>
 
