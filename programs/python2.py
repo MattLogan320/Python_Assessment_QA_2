@@ -220,7 +220,12 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-    return
+    count=0
+    while count<num:
+        string.replace(str(string[len(string)//2]),"")
+        count+=1
+
+    return string
 
     # <QUESTION 9>
 
@@ -239,7 +244,16 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
-    return
+    if len(string1)>len(string2):
+        string1,string2 = string2,string1
+    emptyString=''
+    for i in range(len(string1)):
+        if string1[i]in string2:
+            emptyString+=string1[i]
+    if len(string1)==len(emptyString):
+        return True
+    else:
+        return False
 
     # <QUESTION 10>
 
