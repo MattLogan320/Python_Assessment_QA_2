@@ -139,7 +139,14 @@ def four(string1, string2):
 
 
 def five():
-    return
+    from random import randint
+    list=[]
+    while len(list)<5:
+        x=random.randint(100,200)
+        if x %2==0:
+            list.append(x)
+        
+    return list
 
     # <QUESTION 6>
 
