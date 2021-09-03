@@ -116,7 +116,12 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    zip=''
+    if len(string1)==len(string2):
+        for i in range(len(string1)):
+            zip += string1[i]
+            zip += string2[i]
+    return zip
 
     # <QUESTION 5>
 
