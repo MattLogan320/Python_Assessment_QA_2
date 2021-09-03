@@ -32,7 +32,11 @@ import random
 
 
 def one(string):
-    return
+    tripString=""
+    for i in string:
+        tripString+= i*3
+    return tripString
+
 
     # <QUESTION 2>
 
@@ -51,7 +55,15 @@ def one(string):
 
 
 def two(num):
-    return
+    prime=True
+    if num ==1:
+        return True
+    if num>1:
+        for i in range(2,num):
+            if num%i ==0:
+                prime=False
+                break    
+    return prime
 
     # <QUESTION 3>
 
