@@ -272,4 +272,10 @@ def nine(string1, string2):
 
 
 def ten(a, b):
-    return
+    array=[]
+    for i in range(b):
+        list=[]
+        for j in range(a):
+            list.append(i*j)
+        array.append(list)
+    return array
