@@ -81,7 +81,12 @@ def two(num):
 
 
 def three(a):
-    return
+    
+    double=f'{str(a)*2}'
+    triple=f'{str(a)*3}'
+    quad=f'{str(a)*4}'
+    sum=a+int(double)+int(triple)+int(quad)
+    return sum
 
     # <QUESTION 4>
 
